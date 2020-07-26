@@ -1,0 +1,98 @@
+body {
+    padding: 2rem;
+    font-family: "Averia Sans Libre", 'Lucida Sans Regular', 'Lucida Grande', Verdana, 'Lucida Sans Unicode', sans-serif; 
+    background-color: #BF9F8C; 
+}
+.customheader {
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.h1header {
+    position: relative; 
+    top: 50%; 
+    display: block; 
+    font-size: 5em; 
+    font-family: "Indie Flower", "Courier New", monospace; 
+    color: pink; 
+}
+
+.background-lemur {
+    background-image: url('../Bilder/lemur.jpg');
+}
+
+.background-vogel {
+    background-image: url('../Bilder/vogel2.jpg'); 
+
+}
+
+   
+article {
+    width: auto;
+}
+.flex { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    font-family: "Averia Sans Libre", "Open Sans", "Kaushan Script"; 
+    font-style: italic; 
+}
+
+
+.box {
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.box2 {
+    float:right; 
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+main {
+    display: block; 
+    align-items: center;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none; 
+    width: 50px; 
+    text-align: center; 
+}
+nav a{
+    color: black;
+    text-decoration: none; 
+    display: block;
+    padding: 2rem; 
+    font-size: 20px;
+}
+li:hover {
+    font-weight: bold; 
+}
+.Titel {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+Table {
+    border: thin solid black; 
+    border-collapse: separate;
+    border-spacing: 2px; 
+    table-layout: auto;
+    max-width: 100%;
+    font-variant: small-caps; 
+}
+
+footer {
+padding: 1rem; 
+margin-top: 1rem;
+
+}
