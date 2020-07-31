@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <meta name="description" content="Beschreibung">
+        <title>Zoo Urfahr</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <header>
+        <div class="customheader background-vogel">
+            <h1 class="h1header">Wilkommen auf der Spielwiese</h1>
+        </div>
+
+    <nav>
+        
+        <ul>
+            <li><a href="index-zoo.html" class="aktuell">Home</a></li>
+            <li><a href="Infoseite.html">Infoseite</a></li>
+            <li><a href="Kontaktseite.html">Kontakt</a></li>
+        </ul>
+        <div class="Titel"></div>
+    </nav>
+    </header>
+    <body>
+        <h3>Deine Meinung ist gefragt!</h3>
+            <p> 
+                Da uns die Meinung unserer Besucher nicht egal ist, würden wir Dich bitten auch unser 
+                Kontaktformular zu befüllen. Teile uns mit welche Tierarten Dir am besten 
+                gefallen haben und ob du uns weiter empfehlen würdest. 
+                Über kurze persönliche Worte im Kommentar freuen wir uns ganz besonders! 
+            </p>
+        <form method="GET" action="ausgabe.html">
+            <fieldset>
+                <legend>Kontaktmöglichkeiten</legend>
+
+            <div>
+                
+                <label for="name">Name</label>
+                <input type="text" name="Name" id="Name">
+            </div>
+            <div>
+                <label for="mailadresse">Mailadresse</label>
+                <input type="text" name="Mailadresse" id="mailadresse">
+            </div>
+            <div>
+                <label for="besuchstag">Besuchstag</label>
+                <input type="date" name="Besuchstag" id="besuchstag">
+            </div>
+            <div>
+                <label for="besuchszeit">Besuchszeit</label>
+                <input type="time" name="Besuchszeit" id="besuchszeit">
+            </div>
+            <div>
+                <label for="hatesgefallen">hat es gefallen</label>
+                <input type="range" name="hat es gefallen" id="hat es gefallen">
+            </div>
+            <div>
+                <form action="Weiterempfehlung">
+                <p>Weiterempfehlung:</p>
+                <input type="radio" name="Weiterempfehlung" value="ja">ja
+                <input type="radio" name="Weiterempfehlung" value="nein">nein
+                </form>
+            </div>
+            <div>
+            <label for="Lieblingstierart">Welche Tierart hat dir am besten gefallen</label>
+            <input type="text" list="intliste" name="Lieblingstierart" id="Lieblingstierart">
+            <datalist id="intliste">
+                <option value="Säugetiere">
+                <option value="Reptilien">
+                <option value="Vögel">
+                <option value="Fische">
+            </datalist>
+            </div>
+            
+            <label for="kommentar">Kommentar</label>
+            <textarea rows="5" cols="20" required id="kommentar" name="description"></textarea>
+
+            <div>
+                <label for="besucherinfo">Besucherinfo</label>
+                <select name="besucherinfo" id="besucherinfo">
+                    <option value="1">Familienausflug</option>
+                    <option value="2">Allein unterwegs</option>
+                    <option value="3">Gruppenausflug</option>
+                    <option value="4">Ausflug mit Freunden</option>
+                    <option value="5">sonstiges</option>
+                    </select>
+            </div>
+            <div>
+            <input type="submit" value="Absenden">
+            <input type="reset" value="Reset">
+            </div>
+        </fieldset>
+            </form>
+    </body>
+
+
+
+
+
+</html>
